@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <!--向tomcat申请一个servlet-->
+    <servlet>
+        <servlet-name>myServlet</servlet-name> <!--别名-->
+        <servlet-class>com.msb.servlet.MyServlet</servlet-class> <!--对用的servet类-->
+    </servlet>
+    <!--给servlet匹配一个请求路径-->
+    <servlet-mapping>
+        <servlet-name>myServlet</servlet-name>
+        <url-pattern>/myServlet.do</url-pattern>
+    </servlet-mapping>
+</web-app>
